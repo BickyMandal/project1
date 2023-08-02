@@ -1,0 +1,103 @@
+
+/* Nunito Font imported */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    transition: all 0.3s linear;
+    outline: none;
+    border: none;
+    color: white;
+}
+/* Global variable */
+:root{
+    --yellow:#f9ca24;
+}
+body{
+    background-color: #111;
+    overflow-x: hidden;
+    height: 1800px;
+}
+.nav-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 100%;
+    width: 22rem;
+    background: #1a1a1a;
+    
+}
+.profile-pics{
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    border:0.4rem solid var(--yellow);
+}
+.profile-pics>img{
+    width: 200px;
+    height: auto;
+    padding-right: 28px;
+    object-fit: cover;
+
+}
+.profile-section>.name{
+    font-size: 1.5rem;
+    margin-top: 15px;
+   
+}
+.profile-section>.post{
+    font-size: 1rem;
+}
+.nav-section>.nav-item{
+    width: 100%;
+}
+.nav-section>.nav-item>ul{
+    padding: 0.4rem 3rem;
+}
+.nav-section>.nav-item>ul>li>a{
+    display: block;
+    padding: 0.4rem;
+    margin: .6rem 0;
+    background-color: #333;
+    font-size: .9rem;
+    border-radius: 5rem;
+}.nav-section>.nav-item>ul>li>a:hover{
+    background-color: #f9ca24;
+}
+#menu{
+    position: fixed;
+    top: 2rem;
+    right: 1rem;
+    cursor: pointer;
+    z-index: 100;
+    display: none;
+}
+/* for responsive */
+@media(max-width:991px){
+    .nav-section{
+        left: -120%;
+    }
+    #menu{
+        display: block;
+       font-size: 2rem;
+    }
+    .toggle{
+        left: 0%;
+        z-index: 1000;
+    }
+}
+
+/* Hero-section css start */
